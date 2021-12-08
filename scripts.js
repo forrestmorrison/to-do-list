@@ -18,9 +18,11 @@ function addItem() {
    }
    
 function removeItem(toDoItem) {
-    var newObject = document.getElementById(toDoItem.id);
+    var removeItem = document.getElementById(toDoItem.id);
     console.log(removeItem);
-//    removeItem.onclick.remove();
+    return function removeItem2() {
+        removeItem.remove();
+    }
    }
 
 
